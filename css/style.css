@@ -38,8 +38,8 @@ body {
 	text-decoration: none;
 }
 .call_icon {
-width: calc(var(--index)*1);
-height: calc(var(--index)*1);
+width: calc(var(--index)*1.5);
+height: calc(var(--index)*1.5);
 }
 
 .btn:hover {
@@ -157,14 +157,18 @@ nav ul li a:hover {
 }
 
 .hero p {
-	font-size: 20px;
+	font-size: 25px;
 	margin-bottom: 30px;
+	font-weight: 400;
+	
+	
 }
 
 .order-btn {
 	padding: 15px 40px;
-	font-size: 18px;
+	font-size: 25px;
 	margin-bottom: 50px;
+	border-radius: 20px;
 }
 
 .advantages {
