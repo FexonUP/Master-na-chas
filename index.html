@@ -1,328 +1,379 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>МастерНаЧас</title>
-    <!-- Вот эта строка подключает стили: -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>МастерНаЧас</h1>
-                <p>Бытовые услуги на дому</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#pricing">Цены</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header-contact">
-                <a href="tel:+79991234567" class="phone"><i class="fas fa-phone"></i> +7 (999) 123-45-67</a>
-                <button class="btn call-btn">Заказать звонок</button>
-            </div>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>МастерНаЧас</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<h1>МастерНаЧас</h1>
+					<p>Бытовые услуги на дому</p>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#pricing">Цены</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header-contact">
+					<a href="tel:+79991234567" class="phone"
+						><i class="fas fa-phone"></i> +7 (999) 123-45-67</a
+					>
+					<button class="btn call-btn">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Профессиональные бытовые услуги</h2>
-            <p>Ремонт, установка, обслуживание - быстро, качественно, с гарантией</p>
-            <button class="btn order-btn">Вызвать мастера</button>
-            <div class="advantages">
-                <div class="advantage">
-                    <i class="fas fa-clock"></i>
-                    <p>Выезд в течение 2 часов</p>
-                </div>
-                <div class="advantage">
-                    <i class="fas fa-ruble-sign"></i>
-                    <p>Фиксированные цены</p>
-                </div>
-                <div class="advantage">
-                    <i class="fas fa-shield-alt"></i>
-                    <p>Гарантия на работы</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="hero">
+			<div class="container">
+				<h2>Профессиональные бытовые услуги</h2>
+				<p>
+					Ремонт, установка, обслуживание - быстро, качественно, с гарантией
+				</p>
+				<button class="btn order-btn">Вызвать мастера</button>
+				<div class="advantages">
+					<div class="advantage">
+						<i class="fas fa-clock"></i>
+						<p>Выезд в течение 2 часов</p>
+					</div>
+					<div class="advantage">
+						<i class="fas fa-ruble-sign"></i>
+						<p>Фиксированные цены</p>
+					</div>
+					<div class="advantage">
+						<i class="fas fa-shield-alt"></i>
+						<p>Гарантия на работы</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Наши услуги</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Мелкий ремонт</h3>
-                    <p>Починим мебель, двери, окна, замки и другие бытовые неисправности</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-plug"></i>
-                    <h3>Электрика</h3>
-                    <p>Установка розеток, выключателей, прокладка кабеля, замена проводки</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-faucet"></i>
-                    <h3>Сантехника</h3>
-                    <p>Устранение протечек, замена смесителей, установка сантехники</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-tv"></i>
-                    <h3>Установка техники</h3>
-                    <p>Монтаж телевизоров, стиральных машин, кондиционеров</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-paint-roller"></i>
-                    <h3>Отделочные работы</h3>
-                    <p>Поклейка обоев, покраска, укладка плитки, мелкий ремонт стен</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-couch"></i>
-                    <h3>Сборка мебели</h3>
-                    <p>Сборка шкафов, кроватей, кухонь и другой мебели из IKEA и других</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section id="services" class="services">
+			<div class="container">
+				<h2 class="section-title">Наши услуги</h2>
+				<div class="services-grid">
+					<div class="service-card">
+						<i class="fas fa-tools"></i>
+						<h3>Мелкий ремонт</h3>
+						<p>
+							Починим мебель, двери, окна, замки и другие бытовые неисправности
+						</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-plug"></i>
+						<h3>Электрика</h3>
+						<p>
+							Установка розеток, выключателей, прокладка кабеля, замена проводки
+						</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-faucet"></i>
+						<h3>Сантехника</h3>
+						<p>Устранение протечек, замена смесителей, установка сантехники</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-tv"></i>
+						<h3>Установка техники</h3>
+						<p>Монтаж телевизоров, стиральных машин, кондиционеров</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-paint-roller"></i>
+						<h3>Отделочные работы</h3>
+						<p>Поклейка обоев, покраска, укладка плитки, мелкий ремонт стен</p>
+					</div>
+					<div class="service-card">
+						<i class="fas fa-couch"></i>
+						<h3>Сборка мебели</h3>
+						<p>
+							Сборка шкафов, кроватей, кухонь и другой мебели из IKEA и других
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">О нашей компании</h2>
-                <p>Мы - команда профессиональных мастеров с многолетним опытом работы в сфере бытовых услуг. Наша цель - сделать вашу жизнь комфортнее, взяв на себя решение бытовых проблем.</p>
-                <p>Все наши специалисты проходят тщательный отбор и регулярное обучение. Мы используем только качественные материалы и инструменты, а также предоставляем гарантию на все виды работ.</p>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="number">10+</span>
-                        <span class="label">Лет опыта</span>
-                    </div>
-                    <div class="stat">
-                        <span class="number">5000+</span>
-                        <span class="label">Довольных клиентов</span>
-                    </div>
-                    <div class="stat">
-                        <span class="number">24/7</span>
-                        <span class="label">Доступность</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="images/master.jpg" alt="Наш мастер">
-            </div>
-        </div>
-    </section>
+		<section id="about" class="about">
+			<div class="container">
+				<div class="about-content">
+					<h2 class="section-title">О нашей компании</h2>
+					<p>
+						Мы - команда профессиональных мастеров с многолетним опытом работы в
+						сфере бытовых услуг. Наша цель - сделать вашу жизнь комфортнее, взяв
+						на себя решение бытовых проблем.
+					</p>
+					<p>
+						Все наши специалисты проходят тщательный отбор и регулярное
+						обучение. Мы используем только качественные материалы и инструменты,
+						а также предоставляем гарантию на все виды работ.
+					</p>
+					<div class="stats">
+						<div class="stat">
+							<span class="number">10+</span>
+							<span class="label">Лет опыта</span>
+						</div>
+						<div class="stat">
+							<span class="number">5000+</span>
+							<span class="label">Довольных клиентов</span>
+						</div>
+						<div class="stat">
+							<span class="number">24/7</span>
+							<span class="label">Доступность</span>
+						</div>
+					</div>
+				</div>
+				<div class="about-image">
+					<img src="images/master.jpg" alt="Наш мастер" />
+				</div>
+			</div>
+		</section>
 
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <h2 class="section-title">Примерные цены</h2>
-            <div class="price-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Услуга</th>
-                            <th>Цена от</th>
-                            <th>Срок выполнения</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Замена смесителя</td>
-                            <td>1 200 руб.</td>
-                            <td>1 час</td>
-                        </tr>
-                        <tr>
-                            <td>Установка розетки</td>
-                            <td>800 руб.</td>
-                            <td>30 мин</td>
-                        </tr>
-                        <tr>
-                            <td>Сборка шкафа</td>
-                            <td>2 500 руб.</td>
-                            <td>2-3 часа</td>
-                        </tr>
-                        <tr>
-                            <td>Устранение протечки</td>
-                            <td>1 500 руб.</td>
-                            <td>1-2 часа</td>
-                        </tr>
-                        <tr>
-                            <td>Установка кондиционера</td>
-                            <td>4 000 руб.</td>
-                            <td>3-4 часа</td>
-                        </tr>
-                        <tr>
-                            <td>Поклейка обоев (за м²)</td>
-                            <td>300 руб.</td>
-                            <td>зависит от площади</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="note">* Точная стоимость рассчитывается после осмотра объекта мастером</p>
-            </div>
-        </div>
-    </section>
+		<section id="pricing" class="pricing">
+			<div class="container">
+				<h2 class="section-title">Примерные цены</h2>
+				<div class="price-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Услуга</th>
+								<th>Цена от</th>
+								<th>Срок выполнения</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Замена смесителя</td>
+								<td>1 200 руб.</td>
+								<td>1 час</td>
+							</tr>
+							<tr>
+								<td>Установка розетки</td>
+								<td>800 руб.</td>
+								<td>30 мин</td>
+							</tr>
+							<tr>
+								<td>Сборка шкафа</td>
+								<td>2 500 руб.</td>
+								<td>2-3 часа</td>
+							</tr>
+							<tr>
+								<td>Устранение протечки</td>
+								<td>1 500 руб.</td>
+								<td>1-2 часа</td>
+							</tr>
+							<tr>
+								<td>Установка кондиционера</td>
+								<td>4 000 руб.</td>
+								<td>3-4 часа</td>
+							</tr>
+							<tr>
+								<td>Поклейка обоев (за м²)</td>
+								<td>300 руб.</td>
+								<td>зависит от площади</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="note">
+						* Точная стоимость рассчитывается после осмотра объекта мастером
+					</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <h2 class="section-title">Отзывы клиентов</h2>
-            <div class="reviews-slider">
-                <div class="review">
-                    <div class="review-header">
-                        <img src="images/user1.jpg" alt="Александр">
-                        <div>
-                            <h4>Александр</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Мастер приехал через час после звонка, быстро починил протекающий кран. Все объяснил, дал гарантию. Очень доволен сервисом!"</p>
-                </div>
-                <div class="review">
-                    <div class="review-header">
-                        <img src="images/user2.jpg" alt="Елена">
-                        <div>
-                            <h4>Елена</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Заказывала сборку кухни из Икеа. Мастер работал аккуратно, все сделал за один день. Цена соответствовала озвученной заранее. Рекомендую!"</p>
-                </div>
-                <div class="review">
-                    <div class="review-header">
-                        <img src="images/user3.jpg" alt="Дмитрий">
-                        <div>
-                            <h4>Дмитрий</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Установили телевизор на стену. Все ровно, кабели аккуратно спрятаны. Единственное - немного задержались с выездом, но в целом отлично."</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section id="reviews" class="reviews">
+			<div class="container">
+				<h2 class="section-title">Отзывы клиентов</h2>
+				<div class="reviews-slider">
+					<div class="review">
+						<div class="review-header">
+							<img src="images/user1.jpg" alt="Александр" />
+							<div>
+								<h4>Александр</h4>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<p>
+							"Мастер приехал через час после звонка, быстро починил протекающий
+							кран. Все объяснил, дал гарантию. Очень доволен сервисом!"
+						</p>
+					</div>
+					<div class="review">
+						<div class="review-header">
+							<img src="images/user2.jpg" alt="Елена" />
+							<div>
+								<h4>Елена</h4>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>
+						</div>
+						<p>
+							"Заказывала сборку кухни из Икеа. Мастер работал аккуратно, все
+							сделал за один день. Цена соответствовала озвученной заранее.
+							Рекомендую!"
+						</p>
+					</div>
+					<div class="review">
+						<div class="review-header">
+							<img src="images/user3.jpg" alt="Дмитрий" />
+							<div>
+								<h4>Дмитрий</h4>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+								</div>
+							</div>
+						</div>
+						<p>
+							"Установили телевизор на стену. Все ровно, кабели аккуратно
+							спрятаны. Единственное - немного задержались с выездом, но в целом
+							отлично."
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Вызвать мастера</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Контактная информация</h3>
-                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
-                    <p><i class="fas fa-envelope"></i> namchikilya2004@mail.ru</p>
-                    <p><i class="fas fa-clock"></i> Работаем с 10:00 утра до 22:00 вечера, без выходных</p>
-                    
-                    <h3>Зона обслуживания</h3>
-                    <p>Мы работаем по всему городу и ближайшему пригороду. Выезд в отдаленные районы обсуждается индивидуально.</p>
-                </div>
-                <div class="contact-form">
-                    <form id="order-form">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Телефон" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Email (необязательно)">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Опишите проблему или выберите услугу из списка"></textarea>
-                        </div>
-                        <button type="submit" class="btn submit-btn">Отправить заявку</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2 class="section-title">Вызвать мастера</h2>
+				<div class="contact-container">
+					<div class="contact-info">
+						<h3>Контактная информация</h3>
+						<p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+						<p><i class="fas fa-envelope"></i> namchikilya2004@mail.ru</p>
+						<p>
+							<i class="fas fa-clock"></i> Работаем с 10:00 утра до 22:00
+							вечера, без выходных
+						</p>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>МастерНаЧас</h3>
-                    <p>Профессиональные бытовые услуги на дому с гарантией качества.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Меню</h3>
-                    <ul>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#pricing">Цены</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Контакты</h3>
-                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
-                    <p><i class="fas fa-envelope"></i> info@masternachas.ru</p>
-                    <div class="social">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 МастерНаЧас. Все права защищены.
-                    ИП Михалев Павел Анатольевич  
-                    ОГРНИП 324220200069969
-                    ИНН 220301543961
-                </p>
-            </div>
-        </div>
-    </footer>
+						<h3>Зона обслуживания</h3>
+						<p>
+							Мы работаем по всему городу и ближайшему пригороду. Выезд в
+							отдаленные районы обсуждается индивидуально.
+						</p>
+					</div>
+					<div class="contact-form">
+						<form id="order-form">
+							<div class="form-group">
+								<input type="text" id="name" placeholder="Ваше имя" required />
+							</div>
+							<div class="form-group">
+								<input type="tel" id="phone" placeholder="Телефон" required />
+							</div>
+							<div class="form-group">
+								<input
+									type="email"
+									id="email"
+									placeholder="Email (необязательно)"
+								/>
+							</div>
+							<div class="form-group">
+								<textarea
+									id="message"
+									placeholder="Опишите проблему или выберите услугу из списка"
+								></textarea>
+							</div>
+							<button type="submit" class="btn submit-btn">
+								Отправить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <div class="modal" id="order-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Заказать услугу</h2>
-            <form id="modal-form">
-                <div class="form-group">
-                    <input type="text" id="modal-name" placeholder="Ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="modal-phone" placeholder="Телефон" required>
-                </div>
-                <div class="form-group">
-                    <select id="modal-service" required>
-                        <option value="">Выберите услугу</option>
-                        <option value="repair">Мелкий ремонт</option>
-                        <option value="electric">Электрика</option>
-                        <option value="plumbing">Сантехника</option>
-                        <option value="appliance">Установка техники</option>
-                        <option value="furniture">Сборка мебели</option>
-                        <option value="other">Другое</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn submit-btn">Вызвать мастера</button>
-            </form>
-        </div>
-    </div>
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>МастерНаЧас</h3>
+						<p>Профессиональные бытовые услуги на дому с гарантией качества.</p>
+					</div>
+					<div class="footer-section">
+						<h3>Меню</h3>
+						<ul>
+							<li><a href="#services">Услуги</a></li>
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#pricing">Цены</a></li>
+							<li><a href="#reviews">Отзывы</a></li>
+							<li><a href="#contact">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Контакты</h3>
+						<p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+						<p><i class="fas fa-envelope"></i> info@masternachas.ru</p>
+						<div class="social">
+							<a href="#"><i class="fab fa-vk"></i></a>
+							<a href="#"><i class="fab fa-telegram"></i></a>
+							<a href="#"><i class="fab fa-whatsapp"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2023 МастерНаЧас. Все права защищены. ИП Михалев Павел
+						Анатольевич ОГРНИП 324220200069969 ИНН 220301543961
+					</p>
+				</div>
+			</div>
+		</footer>
 
-    <script src="js/script.js"></script>
-</body>
+		<div class="modal" id="order-modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Заказать услугу</h2>
+				<form id="modal-form">
+					<div class="form-group">
+						<input
+							type="text"
+							id="modal-name"
+							placeholder="Ваше имя"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input type="tel" id="modal-phone" placeholder="Телефон" required />
+					</div>
+					<div class="form-group">
+						<select id="modal-service" required>
+							<option value="">Выберите услугу</option>
+							<option value="repair">Мелкий ремонт</option>
+							<option value="electric">Электрика</option>
+							<option value="plumbing">Сантехника</option>
+							<option value="appliance">Установка техники</option>
+							<option value="furniture">Сборка мебели</option>
+							<option value="other">Другое</option>
+						</select>
+					</div>
+					<button type="submit" class="btn submit-btn">Вызвать мастера</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
