@@ -78,6 +78,7 @@ header {
 	width: 100%;
 	top: 0;
 	z-index: 1000;
+
 }
 
 header .container {
@@ -390,7 +391,7 @@ tr:hover {
     font-size: 30px;
     margin-bottom: 5px;
 }
-}
+
 
 /* Увеличенные кнопки с новым позиционированием */
 .carousel-button {
