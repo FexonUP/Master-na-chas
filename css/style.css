@@ -159,8 +159,9 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-	font-size: 52px;
-	margin-bottom: 60px;
+	font-size: 72px;
+	margin-bottom: 15px;
+	font-weight: 60px;
 }
 
 .hero p {
@@ -183,8 +184,8 @@ nav ul li a:hover {
 .advantages {
 	display: flex;
 	justify-content: center;
-	gap: 50px;
-	margin-top: 50px;
+	gap: 100px;
+	margin-top: 70px;
 }
 
 .advantage {
@@ -194,7 +195,7 @@ nav ul li a:hover {
 }
 
 .advantage i {
-	font-size: 50px;
+	font-size: 40px;
 	color: #ff6b00;
 	margin-right: 15px;
 }
