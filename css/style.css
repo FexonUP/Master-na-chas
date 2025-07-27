@@ -29,7 +29,7 @@ body {
 	background-color: #ff6b00;
 	color: white;
 	border: none;
-	border-radius: 50%;
+	border-radius: 20px;
 	cursor: pointer;
 	font-size: 20px;
 	font-weight: 600;
