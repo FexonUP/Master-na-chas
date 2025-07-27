@@ -350,74 +350,80 @@ tr:hover {
 }
 
 /* Отзывы */
+/* Увеличенная карусель отзывов */
 .reviews-carousel {
-	position: relative;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	max-width: 800px;
-	margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Увеличил промежуток между кнопками и отзывами */
+    max-width: 1000px; /* Увеличил максимальную ширину */
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .reviews-container {
-	flex: 1;
-	overflow: hidden;
-	position: relative;
-	height: 300px;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    height: 400px; /* Увеличил высоту контейнера */
 }
 
 .review {
-	position: absolute;
-	width: 100%;
-	padding: 20px;
-	box-sizing: border-box;
-	background: #f9f9f9;
-	border-radius: 8px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	opacity: 0;
-	transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    padding: 30px; /* Увеличил внутренние отступы */
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-radius: 12px; /* Увеличил скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Усилил тень */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    min-height: 350px; /* Минимальная высота отзыва */
 }
 
-.review.active {
-	opacity: 1;
+.review p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.review-header {
-	display: flex;
-	align-items: center;
-	margin-bottom: 15px;
+.review-header h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
 }
 
-.review-header img {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	object-fit: cover;
-	margin-right: 15px;
-}
-
-.stars {
-	color: #ffc107;
-	margin-top: 5px;
-}
-
+/* Увеличенные кнопки с новым позиционированием */
 .carousel-button {
-	background: none;
-	border: none;
-	font-size: 24px;
-	cursor: pointer;
-	padding: 10px;
-	background: #f0f0f0;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 32px; /* Увеличил размер стрелок */
+    cursor: pointer;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    width: 60px; /* Увеличил размер кнопок */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%);
+}
+
+.carousel-button.prev {
+    left: -50px; /* Вынес левую кнопку за пределы контейнера */
+}
+
+.carousel-button.next {
+    right: -50px; /* Вынес правую кнопку за пределы контейнера */
 }
 
 .carousel-button:hover {
-	background: #e0e0e0;
+    background: #ff6b00; /* Новый цвет при наведении */
+    color: white;
 }
 
 /* Контакты */
