@@ -142,7 +142,7 @@ nav ul li a:hover {
 /* Герой секция */
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('https://yaart-images.s3.yandex.net/cbabca006adb11f08cbaa66b791c3f35:1')
+		url('/images/frm.png')
 			no-repeat center center/cover; /* Тут менять изображения */
 	color: white;
 	text-align: center;
