@@ -78,7 +78,6 @@ header {
 	width: 100%;
 	top: 0;
 	z-index: 1000;
-
 }
 
 header .container {
@@ -142,14 +141,13 @@ nav ul li a:hover {
 /* Герой секция */
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('/images/frm.png')
-			no-repeat center center/cover; /* Тут менять изображения */
+		url('/images/frm.png') no-repeat center center/cover;
 	color: white;
 	text-align: center;
 	padding: 180px 0;
-	margin-top: 70px;
 	min-height: 100vh;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .hero .container {
@@ -195,7 +193,7 @@ nav ul li a:hover {
 	left: 50%;
 	transform: translateX(-50%);
 	margin-top: auto;
-	margin-bottom: auto
+	margin-bottom: auto;
 }
 
 .advantage {
@@ -242,7 +240,7 @@ nav ul li a:hover {
 
 .service-card:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-card i {
@@ -284,7 +282,8 @@ nav ul li a:hover {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.stats {   /*спайс литвин*/
+.stats {
+	/*спайс литвин*/
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
@@ -353,78 +352,77 @@ tr:hover {
 /* Отзывы */
 /* Увеличенная карусель отзывов */
 .reviews-carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Увеличил промежуток между кнопками и отзывами */
-    max-width: 1000px; /* Увеличил максимальную ширину */
-    margin: 0 auto;
-    padding: 20px 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 30px; /* Увеличил промежуток между кнопками и отзывами */
+	max-width: 1000px; /* Увеличил максимальную ширину */
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 .reviews-container {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-    height: 400px; /* Увеличил высоту контейнера */
+	flex: 1;
+	overflow: hidden;
+	position: relative;
+	height: 400px; /* Увеличил высоту контейнера */
 }
 
 .review {
-    position: absolute;
-    width: 100%;
-    padding: 30px; /* Увеличил внутренние отступы */
-    box-sizing: border-box;
-    background: #f9f9f9;
-    border-radius: 12px; /* Увеличил скругление углов */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Усилил тень */
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    min-height: 350px; /* Минимальная высота отзыва */
+	position: absolute;
+	width: 100%;
+	padding: 30px; /* Увеличил внутренние отступы */
+	box-sizing: border-box;
+	background: #f9f9f9;
+	border-radius: 12px; /* Увеличил скругление углов */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Усилил тень */
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	min-height: 350px; /* Минимальная высота отзыва */
 }
 
 .review p {
-    font-size: 18px;
-    line-height: 1.6;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 .review-header h4 {
-    font-size: 30px;
-    margin-bottom: 5px;
+	font-size: 30px;
+	margin-bottom: 5px;
 }
-
 
 /* Увеличенные кнопки с новым позиционированием */
 .carousel-button {
-    position: absolute;
-    background: none;
-    border: none;
-    font-size: 32px; /* Увеличил размер стрелок */
-    cursor: pointer;
-    padding: 15px;
-    background: #f8f8f8;
-    border-radius: 50%;
-    width: 60px; /* Увеличил размер кнопок */
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    top: 50%; /* Центрирование по вертикали */
-    transform: translateY(-50%);
+	position: absolute;
+	background: none;
+	border: none;
+	font-size: 32px; /* Увеличил размер стрелок */
+	cursor: pointer;
+	padding: 15px;
+	background: #f8f8f8;
+	border-radius: 50%;
+	width: 60px; /* Увеличил размер кнопок */
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	top: 50%; /* Центрирование по вертикали */
+	transform: translateY(-50%);
 }
 
 .carousel-button.prev {
-    left: -50px; /* Вынес левую кнопку за пределы контейнера */
+	left: -50px; /* Вынес левую кнопку за пределы контейнера */
 }
 
 .carousel-button.next {
-    right: -50px; /* Вынес правую кнопку за пределы контейнера */
+	right: -50px; /* Вынес правую кнопку за пределы контейнера */
 }
 
 .carousel-button:hover {
-    background: #ff6b00; /* Новый цвет при наведении */
-    color: white;
+	background: #ff6b00; /* Новый цвет при наведении */
+	color: white;
 }
 
 /* Контакты */
@@ -615,442 +613,460 @@ footer {
 /* Адаптивность */
 /* МОБИЛЬНЫЕ СТИЛИ (только для экранов < 768px) */
 @media (max-width: 767px) {
-    /* 1. Общие исправления */
-    body {
-        font-size: 15px;
-        line-height: 1.4;
-    }
-    
-    .container {
-        width: 95%;
-        padding: 0 10px;
-    }
-    
-    /* 2. Шапка */
-    header .container {
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-    
-    .logo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    nav {
-        width: 100%;
-        order: 3;
-    }
-    
-    nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
-    nav ul li {
-        margin: 0;
-    }
-    
-    /* 3. Герой-секция */
-    .hero {
-        padding: 100px 0 50px;
-        min-height: auto;
-    }
-    
-    .hero h2 {
-        font-size: 28px;
-        width: 100%;
-    }
-    
-    .hero p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 15px 0 25px;
-    }
-    
-    /* 4. Отзывы (исправленная версия) */
-    .reviews-section {
-        padding: 30px 0;
-    }
-    
-    .reviews-carousel {
-        display: block;
-    }
-    
-    .reviews-container {
-        display: block;
-        height: auto;
-    }
-    
-    .review {
-        position: static !important;
-        opacity: 1 !important;
-        transform: none !important;
-        width: 100% !important;
-        margin-bottom: 20px;
-        padding: 15px;
-    }
-    
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    
-    .carousel-button {
-        position: static;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-        margin: 0;
-    }
-    
-    /* 5. Кнопки */
-    .btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    .order-btn {
-        font-size: 16px;
-    }
-    
-    /* 6. Изображения */
-    .about .container {
-        flex-direction: column;
-    }
-    
-    .about-image {
-        margin-top: 20px;
-    }
-    
-    .about-image img {
-        width: 100%;
-        height: auto;
-    }
+	/* 1. Общие исправления */
+	body {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+
+	.container {
+		width: 95%;
+		padding: 0 10px;
+	}
+
+	/* 2. Шапка */
+	header .container {
+		flex-wrap: wrap;
+		padding: 10px 0;
+	}
+
+	.logo {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	nav {
+		width: 100%;
+		order: 3;
+	}
+
+	nav ul {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	nav ul li {
+		margin: 0;
+	}
+
+	/* 3. Герой-секция */
+	.hero {
+		padding: 100px 0 50px;
+		min-height: auto;
+	}
+
+	.hero h2 {
+		font-size: 28px;
+		width: 100%;
+	}
+
+	.hero p {
+		font-size: 16px;
+		line-height: 1.5;
+		margin: 15px 0 25px;
+	}
+
+	/* 4. Отзывы (исправленная версия) */
+	.reviews-section {
+		padding: 30px 0;
+	}
+
+	.reviews-carousel {
+		display: block;
+	}
+
+	.reviews-container {
+		display: block;
+		height: auto;
+	}
+
+	.review {
+		position: static !important;
+		opacity: 1 !important;
+		transform: none !important;
+		width: 100% !important;
+		margin-bottom: 20px;
+		padding: 15px;
+	}
+
+	.carousel-nav {
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 15px;
+	}
+
+	.carousel-button {
+		position: static;
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	/* 5. Кнопки */
+	.btn {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+
+	.order-btn {
+		font-size: 16px;
+	}
+
+	/* 6. Изображения */
+	.about .container {
+		flex-direction: column;
+	}
+
+	.about-image {
+		margin-top: 20px;
+	}
+
+	.about-image img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /* Дополнительно для очень маленьких экранов */
 @media (max-width: 480px) {
-    .review {
-        padding: 12px;
-    }
-    
-    .btn {
-        padding: 8px 15px;
-        font-size: 13px;
-    }
-}
+	.review {
+		padding: 12px;
+	}
 
+	.btn {
+		padding: 8px 15px;
+		font-size: 13px;
+	}
+}
 
 /* === ДОБАВЛЕНИЯ: Финальная мобильная адаптация и исправления шапки === */
 
 /* --- Шапка --- */
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 15px;
-    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 15px;
+	position: relative;
 }
 
 .call-btn {
-    position: absolute;
-    right: 60px; /* Отодвинули левее */
-    top: 50%;
-    transform: translateY(-50%);
+	position: absolute;
+	right: 60px; /* Отодвинули левее */
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .burger {
-    margin-right: 10px; /* Отступ от правого края */
+	margin-right: 10px; /* Отступ от правого края */
 }
 
 /* --- Сетка услуг --- */
 /* Две карточки в ряд на мобильных */
 @media (max-width: 767px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        justify-items: center;
-    }
+	.services-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		justify-items: center;
+	}
 
-    .service-card {
-        max-width: 160px;
-        padding: 15px;
-        font-size: 15px;
-    }
+	.service-card {
+		max-width: 160px;
+		padding: 15px;
+		font-size: 15px;
+	}
 
-    .service-card i {
-        font-size: 70px;
-        margin-bottom: 10px;
-    }
+	.service-card i {
+		font-size: 70px;
+		margin-bottom: 10px;
+	}
 }
 
 /* Одна карточка в ряд на очень маленьких экранах */
 @media (max-width: 480px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+	.services-grid {
+		grid-template-columns: 1fr;
+	}
 
-    .service-card {
-        max-width: 100%;
-    }
+	.service-card {
+		max-width: 100%;
+	}
 }
-
-
 
 /* === Исправление наложений блока преимуществ === */
 .advantages {
-    position: static !important;
-    transform: none !important;
-    margin: 30px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+	position: static !important;
+	transform: none !important;
+	margin: 30px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
 }
 
 .advantage {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
-
-
 
 /* === Исправление положения кнопки звонка === */
 
 /* Десктоп — кнопка в потоке */
 .call-btn {
-    position: static !important;
-    margin-left: 20px;
-    margin-top: 0;
-    transform: none !important;
+	position: static !important;
+	margin-left: 20px;
+	margin-top: 0;
+	transform: none !important;
 }
 
 /* Мобильная версия */
 @media (max-width: 991px) {
-    .call-btn {
-        position: absolute !important;
-        right: 60px;
-        top: 50%;
-        transform: translateY(-50%) !important;
-    }
+	.call-btn {
+		position: absolute !important;
+		right: 60px;
+		top: 50%;
+		transform: translateY(-50%) !important;
+	}
 }
-
-
 
 /* === Финальное исправление шапки на мобильных === */
 @media (max-width: 991px) {
-    header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 15px;
-        position: relative;
-    }
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 15px;
+		position: relative;
+	}
 
-    .burger {
-        display: block;
-        margin-right: auto; /* бургер слева */
-    }
+	.burger {
+		display: block;
+		margin-right: auto; /* бургер слева */
+	}
 
-    .logo {
-        margin: 0 auto; /* центрируем логотип */
-        text-align: center;
-    }
+	.logo {
+		margin: 0 auto; /* центрируем логотип */
+		text-align: center;
+	}
 
-    .call-btn {
-        position: static !important; /* больше не absolute */
-        margin-left: auto;
-        transform: none !important;
-    }
+	.call-btn {
+		position: static !important; /* больше не absolute */
+		margin-left: auto;
+		transform: none !important;
+	}
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: white;
-        width: 100%;
-        text-align: center;
-        position: relative;
-        padding: 10px 0;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    }
+	nav ul {
+		display: none;
+		flex-direction: column;
+		background: white;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		padding: 10px 0;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	}
 
-    nav ul.show {
-        display: flex;
-    }
+	nav ul.show {
+		display: flex;
+	}
 }
-
-
 
 /* === Анимации карточек услуг === */
 .service-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
-    opacity: 0; /* изначально скрыты */
-    transform: translateY(40px);
+	transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+	opacity: 0; /* изначально скрыты */
+	transform: translateY(40px);
 }
 
 .service-card.visible {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .service-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	transform: translateY(-10px) scale(1.02);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* === Пульсирующая кнопка === */
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.08);
+	}
 }
 
 .order-btn {
-    animation: pulse 3s infinite;
+	animation: pulse 3s infinite;
 }
 
 /* === Hero параллакс (через JS) === */
 .hero {
-    background-position: center 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    transition: background-position 0.1s linear;
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	transition: background-position 0.1s linear;
 }
-
-
 
 /* === Плавающая кнопка (только на мобильных) === */
 .floating-call-btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2000;
-    background-color: #ff6b00;
-    color: white;
-    font-size: 18px;
-    padding: 12px 20px;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 2000;
+	background-color: #ff6b00;
+	color: white;
+	font-size: 18px;
+	padding: 12px 20px;
+	border-radius: 50px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .floating-call-btn:hover {
-    background-color: #e05d00;
-    transform: scale(1.05);
+	background-color: #e05d00;
+	transform: scale(1.05);
 }
 
 @media (max-width: 767px) {
-    .floating-call-btn {
-        display: block;
-    }
+	.floating-call-btn {
+		display: block;
+	}
 }
 
 /* === Всплывающее окно «Мы перезвоним» === */
 .callback-popup {
-    display: none;
-    position: fixed;
-    z-index: 3000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    text-align: center;
-    max-width: 300px;
-    animation: popupFade 0.5s ease forwards;
+	display: none;
+	position: fixed;
+	z-index: 3000;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 30px 20px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	max-width: 300px;
+	animation: popupFade 0.5s ease forwards;
 }
 
 .callback-popup h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #333;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #333;
 }
 
 .callback-popup input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }
 
 .callback-popup button {
-    background: #ff6b00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
+	background: #ff6b00;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
 }
 
 .callback-popup button:hover {
-    background: #e05d00;
+	background: #e05d00;
 }
 
 .callback-popup .close-popup {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 22px;
-    cursor: pointer;
-    color: #666;
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	font-size: 22px;
+	cursor: pointer;
+	color: #666;
 }
 
 @keyframes popupFade {
-    from {opacity: 0; transform: translate(-50%, -60%);}
-    to {opacity: 1; transform: translate(-50%, -50%);}
+	from {
+		opacity: 0;
+		transform: translate(-50%, -60%);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
 }
-
-
 
 /* === Плавающий баннер акции === */
 .promo-banner {
-    position: fixed;
-    bottom: 90px; /* выше кнопки вызова мастера */
-    right: 20px;
-    background: #ff6b00;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    z-index: 2500;
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-    animation: bannerFade 0.5s ease forwards;
+	position: fixed;
+	bottom: 90px; /* выше кнопки вызова мастера */
+	right: 20px;
+	background: #ff6b00;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	z-index: 2500;
+	font-family: 'Segoe UI', sans-serif;
+	text-align: center;
+	animation: bannerFade 0.5s ease forwards;
 }
-.promo-text { font-size: 18px; font-weight: bold; }
-.promo-timer { font-size: 16px; margin-top: 5px; }
+.promo-text {
+	font-size: 18px;
+	font-weight: bold;
+}
+.promo-timer {
+	font-size: 16px;
+	margin-top: 5px;
+}
 .close-banner {
-    position: absolute; top: 3px; right: 8px;
-    cursor: pointer; font-size: 18px; color: white;
+	position: absolute;
+	top: 3px;
+	right: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	color: white;
 }
 @keyframes bannerFade {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* Подсветка карточек услуг */
 .service-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 35px rgba(255,107,0,0.3);
+	transform: translateY(-10px) scale(1.05);
+	box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
 }
 
 /* Canvas hero */
 #heroCanvas {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1;
 }
-.hero { position: relative; z-index: 2; }
+.hero {
+	position: relative;
+	z-index: 2;
+}
