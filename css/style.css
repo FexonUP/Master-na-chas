@@ -919,7 +919,7 @@ header .container {
     background-position: center 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     transition: background-position 0.1s linear;
 }
 
