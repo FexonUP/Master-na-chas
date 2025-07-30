@@ -755,6 +755,22 @@ header .container {
 }
 
 .call-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* идеально круглая кнопка */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background-color: #e05d00;
+    transform: scale(1.05);
+}
 	position: absolute;
 	right: 60px; /* Отодвинули левее */
 	top: 50%;
