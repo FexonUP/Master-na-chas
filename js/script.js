@@ -243,3 +243,37 @@ if (canvas) {
 	}
 	animate()
 }
+
+
+// === Модальное окно заявки ===
+document.querySelectorAll('.order-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = document.getElementById('orderModal');
+        if(modal) modal.style.display = 'flex';
+    });
+});
+
+const closeModalBtn = document.querySelector('.close-modal');
+if(closeModalBtn){
+    closeModalBtn.addEventListener('click', () => {
+        document.getElementById('orderModal').style.display = 'none';
+    });
+}
+
+const orderModal = document.getElementById('orderModal');
+if(orderModal){
+    orderModal.addEventListener('click', e => {
+        if(e.target.id === 'orderModal'){
+            e.target.style.display = 'none';
+        }
+    });
+}
+
+const leadForm = document.getElementById('leadForm');
+if(leadForm){
+    leadForm.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Спасибо! Ваша заявка отправлена.');
+        document.getElementById('orderModal').style.display = 'none';
+    });
+}

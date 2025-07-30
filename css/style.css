@@ -771,10 +771,13 @@ header .container {
     background-color: #e05d00;
     transform: scale(1.05);
 }
-	position: absolute;
-	right: 60px; /* Отодвинули левее */
-	top: 50%;
-	transform: translateY(-50%);
+
+/* Правка: вынесли отдельный блок call-btn */
+.call-btn {
+    position: absolute;
+    right: 60px; /* Отодвинули левее */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .burger {
@@ -1085,4 +1088,129 @@ header .container {
 .hero {
 	position: relative;
 	z-index: 2;
+}
+
+/* === Увеличенная круглая кнопка телефона в шапке === */
+.call-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 22px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background-color: #e05d00;
+    transform: scale(1.08);
+}
+
+/* === Модальное окно заявки === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.modal-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #e05d00;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px; right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+
+/* === Крупное промо-модальное окно со скидкой 30% === */
+.promo-modal {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    max-width: 95%;
+    position: relative;
+    font-size: 18px;
+    animation: modalScale 0.4s ease forwards;
+}
+
+.promo-modal h2 {
+    color: #ff6b00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.promo-modal p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.promo-modal input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.promo-modal button {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.promo-modal button:hover {
+    background: #e05d00;
+}
+
+@keyframes modalScale {
+    from {transform: scale(0.7); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
 }
