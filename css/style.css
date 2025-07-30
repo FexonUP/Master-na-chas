@@ -1214,3 +1214,82 @@ header .container {
     from {transform: scale(0.7); opacity: 0;}
     to {transform: scale(1); opacity: 1;}
 }
+
+
+/* Scroll-lock для модального окна */
+body.modal-open { overflow: hidden; }
+
+/* Увеличенный крестик для мобильных */
+.close-modal {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Подвал на мобильных без щелей */
+footer {
+    padding-bottom: 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* --- Исправление перекрытия hero шапкой на мобильных --- */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 120px; /* отступ под фиксированную шапку */
+  }
+}
+
+
+/* --- Дополнительный базовый отступ hero --- */
+.hero {
+    padding-top: 20px;
+}
+
+
+/* --- Hero отступ под шапку --- */
+.hero {
+    padding: 0 15px; /* защита текста от прилипания к краям */
+}
+
+/* Scroll-lock */
+body.modal-open { overflow: hidden; }
+
+/* Крестик побольше */
+.close-modal { font-size: 28px; cursor: pointer; }
+
+/* Анимация отзывов */
+.review { 
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    left: 0; right: 0;
+}
+.review.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Стрелки карусели */
+.reviews-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+.reviews-nav button {
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.reviews-nav button:hover {
+    background: #e05d00;
+}
