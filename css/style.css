@@ -42,7 +42,7 @@ body {
 }
 
 .container h2 {
-	font-weight: 700; /* Жирный заголовок */
+	font-weight: 700; /* Жирный заголОвок */
 }
 .highlight-words {
 	color: #ff8c00; /* Оранжевый цвет для слов */
@@ -284,7 +284,7 @@ nav ul li a:hover {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.stats {
+.stats {   /*спайс литвин*/
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
@@ -613,12 +613,23 @@ footer {
 }
 
 /* Адаптивность */
+/* МОБИЛЬНЫЕ СТИЛИ (только для экранов < 768px) */
 @media (max-width: 767px) {
-    /* 1. Фиксируем шапку */
+    /* 1. Общие исправления */
+    body {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    /* 2. Шапка */
     header .container {
-        flex-direction: row;
         flex-wrap: wrap;
-        padding: 10px 15px;
+        padding: 10px 0;
     }
     
     .logo {
@@ -630,134 +641,416 @@ footer {
     nav {
         width: 100%;
         order: 3;
-        margin-top: 15px;
     }
     
     nav ul {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     
     nav ul li {
-        margin: 0 10px;
+        margin: 0;
     }
     
-    .header-contact {
-        margin-left: auto;
-    }
-    
-    /* 2. Герой-секция */
+    /* 3. Герой-секция */
     .hero {
-        padding: 100px 20px 60px;
+        padding: 100px 0 50px;
         min-height: auto;
     }
     
     .hero h2 {
-        font-size: 32px;
+        font-size: 28px;
         width: 100%;
-        line-height: 1.3;
     }
     
     .hero p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
         margin: 15px 0 25px;
     }
     
-    .order-btn {
-        font-size: 18px;
-        padding: 12px 30px;
+    /* 4. Отзывы (исправленная версия) */
+    .reviews-section {
+        padding: 30px 0;
     }
     
-    .advantages {
-        position: relative;
-        bottom: auto;
-        flex-wrap: wrap;
+    .reviews-carousel {
+        display: block;
+    }
+    
+    .reviews-container {
+        display: block;
+        height: auto;
+    }
+    
+    .review {
+        position: static !important;
+        opacity: 1 !important;
+        transform: none !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    
+    .carousel-nav {
+        display: flex;
+        justify-content: center;
         gap: 15px;
-        margin: 30px auto 0;
-        padding: 0;
+        margin-top: 15px;
     }
     
-    .advantage {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding: 10px;
+    .carousel-button {
+        position: static;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin: 0;
     }
     
-    /* 3. Общие стили секций */
-    .section {
-        padding: 50px 0;
+    /* 5. Кнопки */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
     }
     
-    .section-title {
-        font-size: 28px;
-        margin-bottom: 30px;
+    .order-btn {
+        font-size: 16px;
     }
     
-    /* 4. Сетка услуг */
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* 5. Блок "О нас" */
+    /* 6. Изображения */
     .about .container {
         flex-direction: column;
     }
     
     .about-image {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     
-    /* 6. Таблицы цен */
-    .price-table {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    table {
-        min-width: 600px;
-    }
-    
-    /* 7. Отзывы */
-    .reviews-carousel {
-        flex-direction: column;
-    }
-    
-    .review {
-        padding: 20px;
-    }
-    
-    /* 8. Контакты */
-    .contact-container {
-        flex-direction: column;
-    }
-    
-    /* 9. Подвал */
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
+    .about-image img {
+        width: 100%;
+        height: auto;
     }
 }
 
-/* Дополнительные правки для очень маленьких экранов */
+/* Дополнительно для очень маленьких экранов */
 @media (max-width: 480px) {
-    nav ul li {
-        margin: 0 5px;
-    }
-    
-    nav ul li a {
-        font-size: 16px;
-    }
-    
-    .hero h2 {
-        font-size: 28px;
-    }
-    
-    .section-title {
-        font-size: 24px;
+    .review {
+        padding: 12px;
     }
     
     .btn {
-        padding: 10px 20px;
-        font-size: 16px;
+        padding: 8px 15px;
+        font-size: 13px;
     }
 }
+
+
+/* === ДОБАВЛЕНИЯ: Финальная мобильная адаптация и исправления шапки === */
+
+/* --- Шапка --- */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    position: relative;
+}
+
+.call-btn {
+    position: absolute;
+    right: 60px; /* Отодвинули левее */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger {
+    margin-right: 10px; /* Отступ от правого края */
+}
+
+/* --- Сетка услуг --- */
+/* Две карточки в ряд на мобильных */
+@media (max-width: 767px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .service-card {
+        max-width: 160px;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .service-card i {
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Одна карточка в ряд на очень маленьких экранах */
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+}
+
+
+
+/* === Исправление наложений блока преимуществ === */
+.advantages {
+    position: static !important;
+    transform: none !important;
+    margin: 30px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.advantage {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* === Исправление положения кнопки звонка === */
+
+/* Десктоп — кнопка в потоке */
+.call-btn {
+    position: static !important;
+    margin-left: 20px;
+    margin-top: 0;
+    transform: none !important;
+}
+
+/* Мобильная версия */
+@media (max-width: 991px) {
+    .call-btn {
+        position: absolute !important;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%) !important;
+    }
+}
+
+
+
+/* === Финальное исправление шапки на мобильных === */
+@media (max-width: 991px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 15px;
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+        margin-right: auto; /* бургер слева */
+    }
+
+    .logo {
+        margin: 0 auto; /* центрируем логотип */
+        text-align: center;
+    }
+
+    .call-btn {
+        position: static !important; /* больше не absolute */
+        margin-left: auto;
+        transform: none !important;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding: 10px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+
+
+/* === Анимации карточек услуг === */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+    opacity: 0; /* изначально скрыты */
+    transform: translateY(40px);
+}
+
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* === Пульсирующая кнопка === */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+.order-btn {
+    animation: pulse 3s infinite;
+}
+
+/* === Hero параллакс (через JS) === */
+.hero {
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: background-position 0.1s linear;
+}
+
+
+
+/* === Плавающая кнопка (только на мобильных) === */
+.floating-call-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-call-btn:hover {
+    background-color: #e05d00;
+    transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+    .floating-call-btn {
+        display: block;
+    }
+}
+
+/* === Всплывающее окно «Мы перезвоним» === */
+.callback-popup {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 300px;
+    animation: popupFade 0.5s ease forwards;
+}
+
+.callback-popup h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.callback-popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.callback-popup button {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.callback-popup button:hover {
+    background: #e05d00;
+}
+
+.callback-popup .close-popup {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+@keyframes popupFade {
+    from {opacity: 0; transform: translate(-50%, -60%);}
+    to {opacity: 1; transform: translate(-50%, -50%);}
+}
+
+
+
+/* === Плавающий баннер акции === */
+.promo-banner {
+    position: fixed;
+    bottom: 90px; /* выше кнопки вызова мастера */
+    right: 20px;
+    background: #ff6b00;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2500;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    animation: bannerFade 0.5s ease forwards;
+}
+.promo-text { font-size: 18px; font-weight: bold; }
+.promo-timer { font-size: 16px; margin-top: 5px; }
+.close-banner {
+    position: absolute; top: 3px; right: 8px;
+    cursor: pointer; font-size: 18px; color: white;
+}
+@keyframes bannerFade {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Подсветка карточек услуг */
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(255,107,0,0.3);
+}
+
+/* Canvas hero */
+#heroCanvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.hero { position: relative; z-index: 2; }
