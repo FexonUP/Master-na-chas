@@ -97,3 +97,14 @@ function revealServiceCards() {
 }
 window.addEventListener('load', revealServiceCards);
 window.addEventListener('scroll', revealServiceCards);
+
+// === Автооткрытие модального окна через 15 секунд ===
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const modal = document.getElementById('orderModal');
+        if (modal && modal.style.display !== 'flex') {
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+    }, 15000); // 15000 мс = 15 секунд
+});
